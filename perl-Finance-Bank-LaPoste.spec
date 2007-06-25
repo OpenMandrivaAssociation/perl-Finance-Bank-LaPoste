@@ -1,6 +1,6 @@
 %define module	Finance-Bank-LaPoste
 %define name	perl-%{module}
-%define version	2.00
+%define version	3.00
 %define release	%mkrel 1
 
 Name:		%{name}
