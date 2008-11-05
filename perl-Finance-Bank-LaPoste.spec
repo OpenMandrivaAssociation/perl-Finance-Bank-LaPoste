@@ -1,7 +1,7 @@
 %define module	Finance-Bank-LaPoste
 %define name	perl-%{module}
-%define version	4.00
-%define release	%mkrel 2
+%define version	5.00
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -9,7 +9,7 @@ Release:	%{release}
 Summary:	Check your "La Poste" accounts from Perl
 License:	GPL or Artistic
 Group:		Development/Perl
-Source:		http://search.cpan.org/CPAN/authors/id/P/PI/PIXEL/%{module}-%{version}.tar.bz2
+Source:		http://search.cpan.org/CPAN/authors/id/P/PI/PIXEL/%{module}-%{version}.tar.gz
 Url:		http://search.cpan.org/dist/%{module}
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Buildrequires:	perl-devel
