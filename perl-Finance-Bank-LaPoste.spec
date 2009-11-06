@@ -1,21 +1,20 @@
-%define module	Finance-Bank-LaPoste
-%define name	perl-%{module}
-%define version	7.00
-%define release	%mkrel 1
+%define upstream_name	 Finance-Bank-LaPoste
+%define upstream_version 7.01
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Check your "La Poste" accounts from Perl
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Source:		http://search.cpan.org/CPAN/authors/id/P/PI/PIXEL/%{module}-%{version}.tar.gz
-Url:		http://search.cpan.org/dist/%{module}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Buildrequires:	perl-devel
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/authors/id/P/PI/PIXEL/%{upstream_name}-%{upstream_version}.tar.gz
+
 Buildrequires:  perl-libwww-perl
 
 Buildarch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 Requires:	perl(Crypt::SSLeay)
 
@@ -26,7 +25,7 @@ banking system at <https://www.videoposte.com/>.
 The interface of this module is similar to other Finance::Bank modules.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -47,4 +46,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes
 %{perl_vendorlib}/Finance/Bank/*
 %{_mandir}/*/*
-
