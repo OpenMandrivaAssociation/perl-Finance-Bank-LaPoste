@@ -1,5 +1,5 @@
 %define upstream_name	 Finance-Bank-LaPoste
-%define upstream_version 7.04
+%define upstream_version 7.05
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
