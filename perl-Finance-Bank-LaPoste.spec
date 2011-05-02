@@ -10,13 +10,12 @@ License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/P/PI/PIXEL/%{upstream_name}-%{upstream_version}.tar.gz
-
-Buildrequires:  perl-libwww-perl
-
+BuildRequires:  perl-libwww-perl
+BuildRequires:  perl(HTML::Parser)
+Requires:	perl(Crypt::SSLeay)
 Buildarch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
-Requires:	perl(Crypt::SSLeay)
 
 %description
 This module provides a read-only interface to the Videoposte online
