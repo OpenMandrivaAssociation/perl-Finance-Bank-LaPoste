@@ -1,15 +1,15 @@
 %define upstream_name	 Finance-Bank-LaPoste
-%define upstream_version 7.05
+%define upstream_version 7.07
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 7.07
+Release:	1
 
 Summary:	Check your "La Poste" accounts from Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/P/PI/PIXEL/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/P/PI/PIXEL/Finance-Bank-LaPoste-7.07.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl-libwww-perl
@@ -117,4 +117,5 @@ make test
 
 * Wed Oct 08 2003 Pixel <pixel@mandrakesoft.com> 0.01-1mdk
 - initial release
+
 
