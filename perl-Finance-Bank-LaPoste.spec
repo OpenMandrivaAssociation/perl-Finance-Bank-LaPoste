@@ -2,14 +2,14 @@
 %define upstream_version 7.07
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 7.07
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Check your "La Poste" accounts from Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/authors/id/P/PI/PIXEL/Finance-Bank-LaPoste-7.07.tar.gz
+Source0:	http://www.cpan.org/authors/id/P/PI/PIXEL/Finance-Bank-LaPoste-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl-libwww-perl
