@@ -1,4 +1,5 @@
 removed_sources:
   Finance-Bank-LaPoste-7.05.tar.gz: 55193d48f1c8eb7da532fcba0ef24151050485b4
-sources:
   Finance-Bank-LaPoste-7.07.tar.gz: 1bcad6816c3ecbc519bd17a0819108668e40649b
+sources:
+  Finance-Bank-LaPoste-7.08.tar.gz: 9b81edc8ca65caf7f41983b3192be205e66138c2
